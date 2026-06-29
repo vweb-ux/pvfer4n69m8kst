@@ -92,7 +92,6 @@
         .subscription-panel {
           background-color: #232323 !important;
         }
-        .webversion-link,
         .issue-label,
         .intro-eyebrow,
         .article-meta,
@@ -134,8 +133,6 @@
       [data-ogsb] .subscription-panel {
         background-color: #232323 !important;
       }
-      [data-ogsc] .webversion-link,
-      [data-ogsb] .webversion-link,
       [data-ogsc] .issue-label,
       [data-ogsb] .issue-label,
       [data-ogsc] .intro-eyebrow,
@@ -190,6 +187,27 @@
         width: 288px;
         max-width: 288px;
         table-layout: fixed;
+      }
+      .webversion-wrap,
+      .webversion-wrap a,
+      .webversion-wrap a:link,
+      .webversion-wrap a:visited,
+      .webversion-wrap a:hover,
+      .webversion-wrap a:active,
+      .webversion-link,
+      .webversion-link a,
+      .webversion-link a:link,
+      .webversion-link a:visited,
+      .webversion-link a:hover,
+      .webversion-link a:active,
+      [data-ogsc] .webversion-wrap,
+      [data-ogsb] .webversion-wrap,
+      [data-ogsc] .webversion-wrap a,
+      [data-ogsb] .webversion-wrap a,
+      [data-ogsc] .webversion-link,
+      [data-ogsb] .webversion-link {
+        color: #f5f5f5 !important;
+        text-decoration: underline !important;
       }
       @media only screen and (max-width: 640px) {
         .container {
@@ -347,8 +365,8 @@
         <td align="center" bgcolor="#161616" class="outer-pad" style="padding:0 16px;background-color:#161616;">
           <table role="presentation" width="620" cellspacing="0" cellpadding="0" border="0" bgcolor="#161616" class="container email-shell" style="width:620px;max-width:620px;background-color:#161616;">
             <tr>
-              <td align="right" bgcolor="#161616" class="mobile-pad" style="padding:18px 30px 8px 30px;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;font-size:12px;line-height:18px;color:#9ea5ad;background-color:#161616;mso-line-height-rule:exactly;">
-                <webversion>Keine Bilder? Online ansehen</webversion>
+              <td align="right" bgcolor="#161616" class="mobile-pad webversion-wrap" style="padding:18px 30px 8px 30px;font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;font-size:12px;line-height:18px;color:#f5f5f5;background-color:#161616;mso-line-height-rule:exactly;">
+                <webversion><span class="webversion-link" style="color:#f5f5f5 !important;text-decoration:underline !important;">Keine Bilder? Online ansehen</span></webversion>
               </td>
             </tr>
             <tr>
