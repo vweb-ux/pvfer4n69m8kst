@@ -188,6 +188,10 @@
         max-width: 288px;
         table-layout: fixed;
       }
+      .article-gap-cell {
+        width: 22px;
+        background-color: #232323;
+      }
       .webversion-wrap,
       .webversion-wrap a,
       .webversion-wrap a:link,
@@ -287,6 +291,13 @@
         .article-media-cell {
           padding: 0 0 16px 0 !important;
         }
+        .article-gap-cell {
+          display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          line-height: 0 !important;
+          font-size: 0 !important;
+        }
         .article-copy-cell {
           padding: 0 !important;
         }
@@ -296,16 +307,14 @@
         }
         .article-image-frame {
           width: 100% !important;
-          height: 340px !important;
+          height: auto !important;
           overflow: hidden !important;
           border-radius: 8px !important;
         }
         .article-image {
           width: 100% !important;
           max-width: 100% !important;
-          height: 100% !important;
-          object-fit: cover !important;
-          object-position: center center !important;
+          height: auto !important;
         }
         .article-title {
           font-size: 22px !important;
@@ -350,7 +359,7 @@
           word-break: break-word !important;
         }
         .article-image-frame {
-          height: 190px !important;
+          height: auto !important;
         }
         .article-title a,
         .article-title a span {
@@ -453,16 +462,16 @@
                             <tr class="article-row">
                               <td width="214" valign="top" class="article-media-cell" style="width:214px;padding:0;">
                                 <!--[if mso]>
-                                <table role="presentation" width="214" cellspacing="0" cellpadding="0" border="0" style="width:214px;"><tr><td width="214" height="160" valign="top" style="width:214px;height:160px;overflow:hidden;">
+                                <table role="presentation" width="214" cellspacing="0" cellpadding="0" border="0" style="width:214px;"><tr><td width="214" valign="top" style="width:214px;overflow:hidden;">
                                 <![endif]-->
-                                <a href="https://www.vischer.com/de/insights" editable="true" class="article-image-frame" style="display:block;width:214px;height:160px;line-height:0;font-size:0;overflow:hidden;border-radius:8px;text-decoration:none;mso-line-height-rule:exactly;">
-                                  <img src="https://i3.createsend1.com/ti/r/72/F97/6F8/221742/csimport/quotas-99079e079e028a3c_2.jpg" width="214" label="Artikelbild" editable height="160" class="article-image" style="display:block;width:214px;height:160px;max-width:214px;object-fit:cover;object-position:center center;border-radius:8px;">
+                                <a href="https://www.vischer.com/de/insights" editable="true" class="article-image-frame" style="display:block;width:214px;height:auto;line-height:0;font-size:0;overflow:hidden;border-radius:8px;text-decoration:none;mso-line-height-rule:exactly;">
+                                  <img src="https://i3.createsend1.com/ti/r/72/F97/6F8/221742/csimport/quotas-99079e079e028a3c_2.jpg" width="214" label="Artikelbild" editable class="article-image" style="display:block;width:214px;height:auto;max-width:214px;border-radius:8px;">
                                 </a>
                                 <!--[if mso]>
                                 </td></tr></table>
                                 <![endif]-->
                               </td>
-                              <td width="22" valign="top" style="width:22px;font-size:0;line-height:0;">&nbsp;</td>
+                              <td width="22" valign="top" bgcolor="#232323" class="article-gap-cell" style="width:22px;font-size:0;line-height:0;background-color:#232323;">&nbsp;</td>
                               <td width="288" valign="top" class="article-copy-cell" style="width:288px;max-width:288px;padding:0;">
                                 <table role="presentation" width="288" cellspacing="0" cellpadding="0" border="0" class="article-copy-table" style="width:288px;max-width:288px;table-layout:fixed;">
                                   <tr>
